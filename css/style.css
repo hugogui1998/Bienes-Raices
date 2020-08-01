@@ -3,7 +3,10 @@ html {
     font-size: 62.5%;
     /*Reset para  REMS - 62.5% = 10px de 16px*/
 }
-*,*:before, *:after{
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
@@ -23,21 +26,29 @@ img {
     max-width: 1200px;
     margin: 0 auto;
 }
+
+.d-block {
+    display: block !important;
+}
+
 /* Botone */
-.boton{
-font-size: 1.5rem;
-text-decoration: none;
-color: whitesmoke;
-padding: 1rem 3rem;
-margin-top: 3rem;
-display: inline-block;
-text-align: center;
+.boton {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    display: inline-block;
+    text-align: center;
 }
-.boton-amarillo{
-background-color: gold;
+
+.boton-amarillo {
+    background-color: #E5A405;
 }
-.boton-verde{
-    background-color: lawngreen;
+
+.boton-verde {
+    background-color: #73D526;
 }
 
 /* Utilidades */
@@ -55,12 +66,6 @@ background-color: gold;
     text-align: center;
 
 }
-
-.d-block{
-    display: block;
-}
-
-
 
 /* Header */
 .site-header.inicio {
@@ -105,14 +110,14 @@ background-color: gold;
     color: white;
     text-decoration: none;
     /*Desaparece la linea del enlace para que solo aparezca el texto*/
-    font-size: 20px;
+    font-size: 1.8rem;
     margin-right: 20px;
 
 }
 
 /* Este estilo hara darle un color al enlace al momento de pasar*/
 .navegacion a:hover {
-    color: red;
+    color:#60B51E;
 }
 
 /* Este estilo hara que el primer enlace no tenga espacio en el principio */
@@ -156,7 +161,156 @@ background-color: gold;
 .contenido-anuncio p {
     margin: 0px;
 }
-.precio{
+
+.precio {
     color: lawngreen;
     font-weight: 700;
+}
+
+.iconos-caracteristicas {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    /*Centrando el contenido*/
+}
+
+.iconos-caracteristicas li {
+    display: flex;
+}
+
+.iconos-caracteristicas li img {
+    margin-right: 2rem;
+}
+
+.ver-todas {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.imagen-contacto {
+    background-image: url("../img/encuentra.jpg");
+    height: 40rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    /*Aliniando el texto y centrandolo en medio */
+}
+
+.contenido-contacto {
+    flex: 1;
+    color: white;
+}
+
+.contenido-contacto p {
+    font-size: 1.6rem;
+}
+
+/* Seccion inferior */
+.seccion-inferior {
+    display: flex;
+    justify-content: space-between;
+ 
+}
+
+.seccion-inferior .blog {
+    flex-basis: 100%;
+    margin-right: 100px;
+}
+
+.seccion-inferior .testimoniales {
+    flex-basis: calc(40% -2rem);
+
+}
+
+.entrada-blog {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    
+    
+}
+
+.entrada.log:last-of-type{
+    margin-bottom: 0;
+
+}
+
+.entrada-blog .imagen {
+    flex-basis: 80%;
+    margin-right: 2rem;
+}
+
+
+.entrada-blog .texto-entrada {
+    flex-basis: calc(60% -3rem);
+
+}
+.texto-entrada a{
+    color: black;
+    text-decoration: none;
+}
+.texto-entrada h4{
+    margin: 0px;
+    line-height: 0.5;
+
+}
+.texto-entrada h4::after{
+    content: "";
+    display: block;
+    width: 15rem;
+    height: .5rem;
+    background-color: chartreuse;
+    margin-top: 1rem;
+}
+.texto-entrada span{
+    color: #E5A405;
+}
+
+.testimonial{
+    background-color: #73D526;
+    font-size: 2rem;
+    color: white;
+    padding: 2rem;
+    height: 25rem;
+    border-radius: 2rem;
+}
+
+.testimonial p{
+    text-align: right;
+    
+
+}
+.testimonial blockquote::before{
+    content: "";
+    background-image: url(../img/comilla.svg);
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    left: -1rem;
+    top: -2rem;
+    
+}
+.testimonial blockquote{
+    position: relative;
+    padding-left: 5rem;
+    font-weight: 300;
+}
+
+.site-footer{
+    background-color:#2D2D2D;
+    margin: 0px;
+
+}
+.contenedor-footer{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+.copryright{
+    margin: 0px;
+    color: white;
+    font-size: 1.6rem;
 }

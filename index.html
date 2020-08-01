@@ -70,7 +70,6 @@
 
     <main class="seccion contenedor">
         <h2 class="fw-300 text-center">Casas y Departamentos en Venta</h2>
-
         <div class="contenedor-anuncios">
             <div class="anuncio">
                 <img src="img/anuncio1.jpg" alt="Casa de lujo">
@@ -80,7 +79,21 @@
                         Casa en el lago con excelente vista, acabados de lujo a un excelente precio
                     </p>
                     <p class="precio">3,000.000</p>
-                    <a href="#" class="boton boton-amarillo d-block" >Ver propiedad</a>
+                    <ul class="iconos-caracteristicas">
+                        <li>
+                            <img src="img/icono_wc.svg" alt="Icono wc">
+                            <p>3</p>
+                        </li>
+                        <li>
+                            <img src="img/icono_dormitorio.svg" alt="Icono dormitorio">
+                            <p>3</p>
+                        </li>
+                        <li>
+                            <img src="img/icono_estacionamiento.svg" alt="Icono estacionamiento">
+                            <p>4</p>
+                        </li>
+                    </ul>
+                    <a href="#" class="boton boton-amarillo d-block">Ver propiedad</a>
                 </div>
             </div>
 
@@ -92,10 +105,23 @@
                         Casa con diseño moderno, asi como tecnologia inteligente y amueblada
                     </p>
                     <p class="precio">2,000.000</p>
+                    <ul class="iconos-caracteristicas">
+                        <li>
+                            <img src="img/icono_wc.svg" alt="Icono wc">
+                            <p>3</p>
+                        </li>
+                        <li>
+                            <img src="img/icono_dormitorio.svg" alt="Icono dormitorio">
+                            <p>3</p>
+                        </li>
+                        <li>
+                            <img src="img/icono_estacionamiento.svg" alt="Icono estacionamiento">
+                            <p>2</p>
+                        </li>
+                    </ul>
                     <a href="#" class="boton boton-amarillo d-block">Ver propiedad</a>
                 </div>
             </div>
-
             <div class="anuncio">
                 <img src="img/anuncio3.jpg" alt="Casa con alberca">
                 <div class="contenido-anuncio">
@@ -104,60 +130,93 @@
                         Casa con alberca y acabados de lujo en la ciudad, excelente oportunidad
                     </p>
                     <p class="precio">3,000.000</p>
+                    <ul class="iconos-caracteristicas">
+                        <li>
+                            <img src="img/icono_wc.svg" alt="Icono wc">
+                            <p>3</p>
+                        </li>
+                        <li>
+                            <img src="img/icono_dormitorio.svg" alt="Icono dormitorio">
+                            <p>3</p>
+                        </li>
+                        <li>
+                            <img src="img/icono_estacionamiento.svg" alt="Icono estacionamiento">
+                            <p>2</p>
+                        </li>
+                    </ul>
                     <a href="#" class="boton boton-amarillo d-block">Ver propiedad</a>
                 </div>
             </div>
         </div>
-        <a href="anuncios.html" class="boton boton-verde d-block">VER TODAS</a>
+        <div class="ver-todas">
+            <a href="anuncios.html" class="boton boton-verde">VER TODAS</a>
+        </div>
     </main>
 
-
-
-    <section>
-        <h2>Encuentra la casa de tu sueños</h2>
-        <p>Llena el formulaio de Contacto y un asesor se pondra en contacto con tigo a la brevedad</p>
-
-        <a href="contacto.html">CONTACTÁNOS</a>
+    <section class="imagen-contacto">
+        <div class="contenedor contenido-contacto">
+            <h2>Encuentra la casa de tu sueños</h2>
+            <p>Llena el formulaio de Contacto y un asesor se pondra en contacto con tigo a la brevedad</p>
+            <a href="contacto.html" class="boton boton-amarillo">CONTACTÁNOS</a>
+        </div>
     </section>
 
-    <section>
-        <h3>Nuestro Blog</h3>
-        <article>
-            <img src="img/blog1.jpg" alt="Entrada de blog">
-            <h4>Terraza en el techo de tu casa</h4>
-            <p>Escrito el <em> 31/07/2020</em> por: <em>Admin</em> </p>
-            <p>Consejos para construir una terraza en el techo de tu casa, con los mejores materiales y ahorrando
-                dinero.</p>
-        </article>
+    <div class="seccion-inferior contenedor seccion">
+        <section class="blog">
+            <h3 class="text-center fw-300">Nuestro Blog</h3>
+            <article class="entrada-blog">
+                <div class="imagen">
+                    <img src="img/blog1.jpg" alt="Entrada de blog" width="230">
+                </div>
+                <div class="texto-entrada">
+                    <a href="#">
+                        <h4>Terraza en el techo de tu casa</h4>
+                    </a>
+                    <p>Escrito el <span> 31/07/2020</span> por: <span>Admin</span> </p>
+                    <p>Consejos para construir una terraza en el techo de tu casa, con los mejores materiales y
+                        ahorrando
+                        dinero.</p>
+                </div>
+            </article>
+            <article class="entrada-blog">
+                <div class="imagen">
+                    <img src="img/blog2.jpg" alt="Entrada de blog" width="300">
+                </div>
+                <div class="texto-entrada">
+                    <a href="#">
+                        <h4>Guía para la decoración de tu hogar</h4>
+                    </a>
+                    <p>Escrito el <span> 31/07/2020 </span> por: <span>Admin</span></p>
+                    <p>Maximiniza el espacio en tu hogar con esta guia, aprende a combinar muebles y colres para darle
+                        vida a tu espacio.</p>
+                </div>
+            </article>
+        </section>
 
-        <article>
-            <img src="img/blog2.jpg" alt="Entrada de blog">
-            <h4>Guía para la decoración de tu hogar</h4>
-            <p>Escrito el <em> 31/07/2020 </em> por: <em>Admin</em></p>
-            <p>Maximiniza el espacio en tu hogar con esta guia, aprende a combinar muebles y colres para darle vida a tu
-                espacio.</p>
-        </article>
-    </section>
+
+        <section class="testimoniales">
+            <h3 class="text-center fw-300 ">Testimoniales</h3>
+            <div class="testimonial">
+                <blockquote>
+                    El personal se comportó de una excelente forma, muy buena atención y la casa
+                    que me ofrecieron cumple con todas mis expectativas
+                </blockquote>
+                <p>- Hugo Guillermo</p>
+            </div>
+        </section>
+    </div>
 
 
-    <section>
-        <h3>Testimoniales</h3>
-        <blockquote>
-            El personal se comportó de una excelente forma, muy buena atención y la casa
-            que me ofrecieron cumple con todas mis expectativas
-        </blockquote>
-
-        <p>- Hugo Guillermo</p>
-    </section>
-
-    <footer>
-        <nav class="navegacion">
-            <a href="nosotros.html">Nosotros</a>
-            <a href="anuncios.html">Anuncios</a>
-            <a href="blog.html">Blog</a>
-            <a href="contacto.html">Contacto</a>
-            <p>Todos los Derechos Reservados 2020 &copy;</p>
-        </nav>
+    <footer class="site-footer seccion">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion">
+                <a href="nosotros.html">Nosotros</a>
+                <a href="anuncios.html">Anuncios</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacto.html">Contacto</a>                
+            </nav>
+            <p class="copryright">Todos los Derechos Reservados 2020 &copy;</p>
+        </div>
     </footer>
 </body>
 
